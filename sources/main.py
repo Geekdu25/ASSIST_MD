@@ -114,7 +114,9 @@ class Application(Tk):
           self.aide = Tk()
           self.aide.title("A propos")
           self.aide.minsize(600, 450)
-          self.aide.iconphoto(False, PhotoImage(file='../pictures/plus.png'))
+          if platform.system() == "Windows":
+            self.aide.ico = PhotoImage(file='../pictures/plus.png')
+            self.aide.iconphoto(False, self.aide.ico)
           self.aide.protocol("WM_DELETE_WINDOW", self.quit_apropos)
           text_intro = Label(self.aide, text="L'assistant du MD.", font=("Arial", 25))
           text_intro.pack()
