@@ -19,7 +19,7 @@ class Application(Tk):
         Tk.__init__(self)
         self.cwd = os.getcwd()
         self.title("L'assistant du MD")
-        self.iconbitmap("../pictures/icon.ico")
+        self.iconphoto(False, PhotoImage(file='../pictures/plus.png'))
         self.minsize(1550, 850)
         if not os.path.exists(self.get_path()):
             showinfo("Fichiers non existants", "Aucun fichier de sauvegarde du logiciel n'a été trouvé sur votre ordinateur.\nDe nouveaux fichiers de sauvegardes vont être crées.")
@@ -114,7 +114,7 @@ class Application(Tk):
           self.aide = Tk()
           self.aide.title("A propos")
           self.aide.minsize(600, 450)
-          self.aide.iconbitmap("../pictures/icon.ico")
+          self.aide.iconphoto(False, PhotoImage(file='../pictures/plus.png'))
           self.aide.protocol("WM_DELETE_WINDOW", self.quit_apropos)
           text_intro = Label(self.aide, text="L'assistant du MD.", font=("Arial", 25))
           text_intro.pack()
