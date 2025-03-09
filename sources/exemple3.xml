@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<builder>
+
+<confLang>0</confLang>
+
+<character>
+<race>Lignée sur mesure</race>
+<class>Artificier</class>
+<level>14</level>
+<background>Philosophe planaire</background>
+
+<str>10</str>
+<dex>12</dex>
+<con>14</con>
+<int>18</int>
+<wis>10</wis>
+<cha>13</cha>
+
+<lvl lvl="1"><hp_brut>8</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2><feat>Empoisonneur</feat><feat_custom>-1</feat_custom><feat_custom2>-1</feat_custom2></lvl>
+<lvl lvl="2"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="3"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="4"><hp_brut>5</hp_brut><aug_carac0>0</aug_carac0><aug_carac1>1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="5"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="6"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="7"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="8"><hp_brut>5</hp_brut><aug_carac0>0</aug_carac0><aug_carac1>3</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="9"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="10"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="11"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="12"><hp_brut>5</hp_brut><aug_carac0>5</aug_carac0><aug_carac1>5</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="13"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="14"><hp_brut>5</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="15"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="16"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="17"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="18"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="19"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="20"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+
+<raceCustom></raceCustom>
+<classPath>alchimiste</classPath>
+<styleCombat1></styleCombat1>
+<styleCombat2></styleCombat2>
+<favoredEnemy0></favoredEnemy0>
+<favoredEnemy6></favoredEnemy6>
+<favoredEnemy14></favoredEnemy14>
+<pack>25</pack>
+<backSpe></backSpe>
+
+<skillsProf id="0"></skillsProf>
+<skillsProf id="1">6,9</skillsProf>
+<skillsProf id="2">1,2</skillsProf>
+<skillsProf id="3"></skillsProf>
+<toolsProf id="0"></toolsProf>
+<toolsProf id="1">outils de voleur, outils de bricoleur, matériel d'alchimiste, matériel d'alchimiste</toolsProf>
+<toolsProf id="2"></toolsProf>
+<toolsProf id="3"></toolsProf>
+<languages id="0">commun,elfique</languages>
+<languages id="1"></languages>
+<languages id="2">gnome,orc</languages>
+<languages id="3"></languages>
+
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="1">mot de guérison</knownSpell>
+<knownSpell lvl="1">rayon empoisonné</knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="2">sphère de feu</knownSpell>
+<knownSpell lvl="2">flèche acide de melf</knownSpell>
+<knownSpell lvl="2">bouche magique</knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="2"></knownSpell>
+<knownSpell lvl="3">forme gazeuse</knownSpell>
+<knownSpell lvl="3">mot de guérison de groupe</knownSpell>
+<knownSpell lvl="3">protection contre une énergie</knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="3"></knownSpell>
+<knownSpell lvl="4">flétrissement</knownSpell>
+<knownSpell lvl="4">protection contre la mort</knownSpell>
+<knownSpell lvl="4">sanctuaire privé de mordenkainen</knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+<knownSpell lvl="4"></knownSpell>
+
+<gp>10</gp>
+<pp>0</pp>
+<ep>0</ep>
+<sp>0</sp>
+<cp>0</cp>
+
+<armor>6</armor>
+<shield>0</shield>
+<weapon>3,8,12</weapon>
+<weaponQ>1,1,1</weaponQ>
+<tools>6,0</tools>
+
+<item>56,87,80,81,38,5,90,76,39,17,92,8</item>
+<itemQ>1,1,1,1,1,1,10,10,1,1,1,1</itemQ>
+<itemX>clé de portail, manifeste de philosophie</itemX>
+<name>Martin</name>
+<sexe>0</sexe>
+<age>20</age>
+<height>1,75 m</height>
+<weight>80 kg</weight>
+<alignment>4</alignment>
+<xp>0</xp>
+<eyes>yeux</eyes>
+<skin>peau</skin>
+<hair>cheveux</hair>
+
+<appearance>apparence</appearance>
+<traits>trait de personn</traits>
+<ideals>ideal</ideals>
+<bonds>liens</bonds>
+<flaws>defauts</flaws>
+
+<backstory>histoire</backstory>
+<allies>alliés et organisations</allies>
+<features>capacités supplémentaire</features>
+<treasure></treasure>
+
+</character>
+</builder>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<builder>
+
+<confLang>0</confLang>
+
+<character>
+<race>Gnome des roches</race>
+<class>Magicien</class>
+<level>1</level>
+<background>Ermite</background>
+
+<str>10</str>
+<dex>10</dex>
+<con>10</con>
+<int>10</int>
+<wis>10</wis>
+<cha>10</cha>
+
+<lvl lvl="1"><hp_brut>6</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="2"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="3"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="4"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="5"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="6"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="7"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="8"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="9"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="10"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="11"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="12"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="13"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="14"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="15"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="16"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="17"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="18"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="19"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+<lvl lvl="20"><hp_brut>0</hp_brut><aug_carac0>-1</aug_carac0><aug_carac1>-1</aug_carac1><aug_carac2>-1</aug_carac2></lvl>
+
+<raceCustom></raceCustom>
+<styleCombat1></styleCombat1>
+<styleCombat2></styleCombat2>
+<favoredEnemy0></favoredEnemy0>
+<favoredEnemy6></favoredEnemy6>
+<favoredEnemy14></favoredEnemy14>
+<pack>12</pack>
+<backSpe></backSpe>
+
+<skillsProf id="0"></skillsProf>
+<skillsProf id="1">1,1</skillsProf>
+<skillsProf id="2">10,14</skillsProf>
+<skillsProf id="3"></skillsProf>
+<toolsProf id="0">outils de bricoleur</toolsProf>
+<toolsProf id="1"></toolsProf>
+<toolsProf id="2">kit d'herboriste</toolsProf>
+<toolsProf id="3"></toolsProf>
+<languages id="0">commun,gnome</languages>
+<languages id="1"></languages>
+<languages id="2">elfique</languages>
+<languages id="3"></languages>
+
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="0"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+<knownSpell lvl="1"></knownSpell>
+
+<gp>5</gp>
+<pp>0</pp>
+<ep>0</ep>
+<sp>0</sp>
+<cp>0</cp>
+
+<armor>0</armor>
+<shield>0</shield>
+<weapon>2</weapon>
+<weaponQ>1</weaponQ>
+<tools>0,2</tools>
+
+<item>82,41,80,46,23,71,61,25,19,92</item>
+<itemQ>1,1,1,1,1,1,10,1,1,1</itemQ>
+<itemX>petit sac de sable, petit couteau</itemX>
+<name>Nom du personnage</name>
+<sexe>0</sexe>
+<age>20</age>
+<height>1,05 m</height>
+<weight>18 kg</weight>
+<alignment>4</alignment>
+<xp>0</xp>
+<eyes></eyes>
+<skin></skin>
+<hair></hair>
+
+<appearance></appearance>
+<traits></traits>
+<ideals></ideals>
+<bonds></bonds>
+<flaws></flaws>
+
+<backstory></backstory>
+<allies></allies>
+<features></features>
+<treasure></treasure>
+
+</character>
+</builder>
