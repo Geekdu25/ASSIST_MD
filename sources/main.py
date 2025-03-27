@@ -52,7 +52,7 @@ class Application(Tk):
         self.fichiers_nom = {}
         for file in os.scandir(self.get_path()+"/personnages"):
             if file.name.endswith(".xml"):
-                self.fichiers_nom[file.name] = etree.parse(self.get_path()+"/personnages/"+file.name).xpath("/builder/character/name")[0].text     
+                self.fichiers_nom[file.name] = etree.parse(self.get_path()+"/personnages/"+file.name).xpath("/builder/character/name")[0].text
         self.status = None
         self.apropos_open = False
         self.home()
@@ -64,13 +64,13 @@ class Application(Tk):
             new_path = self.get_path()+"/personnages/"+path.split("/")[len(path.split("/"))-1]
             if os.path.exists(new_path):
                 a = askyesno("Fichier déjà existant", "Un fichier possédant le même nom que le fichier que vous êtes en train d'enregistrer se trouve déjà dans le dossier des personnages. Désirez-vous tout de même l'écraser ?")
-            if a:    
+            if a:
               try:
                 shutil.copy2(path, new_path)
                 self.fichiers_nom = {}
                 for file in os.scandir(self.get_path()+"/personnages"):
                   if file.name.endswith(".xml"):
-                    self.fichiers_nom[file.name] = etree.parse(self.get_path()+"/personnages/"+file.name).xpath("/builder/character/name")[0].text  
+                    self.fichiers_nom[file.name] = etree.parse(self.get_path()+"/personnages/"+file.name).xpath("/builder/character/name")[0].text
                 showinfo("Enregistrement", "Le fichier a été enregistré !")
                 if self.status == "new":
                     self.liste_total.insert("end", path.split("/")[len(path.split("/"))-1] +" -> "+self.fichiers_nom[path.split("/")[len(path.split("/"))-1]])
@@ -83,13 +83,13 @@ class Application(Tk):
         if askyesno("Réinitialisation", "Désirez-vous réinitialiser toutes les données de sauvegarde du logiciel présentes sur votre ordinateur ?"):
             if askyesno("Réinitialisation", "En êtes-vous sûr ? (Les données effacées ne peuvent pas être récupérées)"):
                 try:
-                  if platform.system() == "Windows":  
-                    os.chdir(f"C://users/{os.getlogin()}/AppData/Roaming")  
+                  if platform.system() == "Windows":
+                    os.chdir(f"C://users/{os.getlogin()}/AppData/Roaming")
                     shutil.rmtree("ASSIST_MD")
-                  elif platform.system() == "Linux":  
-                    os.chdir(f"/home/{os.getlogin()}")  
-                    shutil.rmtree(".ASSIST_MD")  
-                  os.chdir(self.cwd)  
+                  elif platform.system() == "Linux":
+                    os.chdir(f"/home/{os.getlogin()}")
+                    shutil.rmtree(".ASSIST_MD")
+                  os.chdir(self.cwd)
                 except:
                     showwarning("Echec", "La réinitialisation a échoué. (Il est probable que cela soit du a une protection des données.)")
                     showinfo("Information", f"Pour effacer les données manuellement, veuillez supprimer le dossier : {self.get_path()}")
@@ -110,13 +110,10 @@ class Application(Tk):
 
     def apropos(self):
         if not self.apropos_open:
-          self.apropos_open = True  
+          self.apropos_open = True
           self.aide = Tk()
           self.aide.title("A propos")
           self.aide.minsize(600, 450)
-          if platform.system() == "Windows":
-            self.aide.ico = PhotoImage(file='../pictures/plus.png')
-            self.aide.iconphoto(False, self.aide.ico)
           self.aide.protocol("WM_DELETE_WINDOW", self.quit_apropos)
           text_intro = Label(self.aide, text="L'assistant du MD.", font=("Arial", 25))
           text_intro.pack()
@@ -134,7 +131,10 @@ class Application(Tk):
     def get_path(self):
         path = ""
         if platform.system() == "Windows":
-            path = f"C://users/{os.getlogin()}/AppData/Roaming/ASSIST_MD"
+            if os.path.exists(f"C://users/{os.getlogin()}.AUGUSTINS"):
+              path = f"C://users/{os.getlogin()}.AUGUSTINS/AppData/Roaming/ASSIST_MD"
+            else:
+              path = f"C://users/{os.getlogin()}/AppData/Roaming/ASSIST_MD"
         elif platform.system() == "Linux":
             path = f"/home/{os.getlogin()}/.ASSIST_MD"
         return path
@@ -147,7 +147,7 @@ class Application(Tk):
     def home(self):
         ok_status = [None, "load", "home", "audio"]
         if (self.status == "new_ch" and askyesno("Abandonner le personnage", "Désirez-vous réellement abandonner le personnage en cours de création ?")) or (self.status == "new" and askyesno("Abandonner la campagne", "Désirez-vous réellement abandonner la campagne en cours de création ?")) or self.status in ok_status:
-          self.status = "home"  
+          self.status = "home"
           self.delete_frames()
           self.main_frame = Frame(self)
           self.main_frame.pack()
@@ -168,7 +168,7 @@ class Application(Tk):
           self.button_delete.grid(row=0, column=0, columnspan=2)
           self.button_charger = Button(self.buttons_frame, text="Charger la campagne", command=self.load_campagne)
           self.button_charger.grid(row=0, column=2, columnspan=2)
-          
+
 
     def delete_campagne(self):
         if len(self.liste_campagnes.curselection()) > 0:
@@ -177,7 +177,7 @@ class Application(Tk):
             shutil.rmtree(self.liste_campagnes.get(self.liste_campagnes.curselection()))
             os.chdir(self.cwd)
             self.liste_campagnes.delete(self.liste_campagnes.curselection())
-            
+
 
     def nouvelle_campagne(self):
         self.status = "new"
@@ -207,8 +207,8 @@ class Application(Tk):
         for fichier in os.scandir(self.get_path()+"/personnages"):
             if fichier.name.endswith(".xml"):
                 self.liste_total.insert("end", fichier.name+" -> "+self.fichiers_nom[fichier.name])
-        bouton_delete = Button(frame, text="Supprimer le dernier personnage", command=self.delete_last)        
-        bouton_delete.grid(row=0, column=8, sticky=S)        
+        bouton_delete = Button(frame, text="Supprimer le dernier personnage", command=self.delete_last)
+        bouton_delete.grid(row=0, column=8, sticky=S)
         bouton_record = Button(self.main_frame, text="Enregistrer la campagne", command=self.record_campagne)
         bouton_record.pack(pady=15)
 
@@ -301,7 +301,7 @@ class Application(Tk):
         #------------------------------------Bouton de sauvegarde----------------------------------------------
         save_button = Button(self.main_frame, text="Enregistrer le personnage", command=self.save_new_character)
         save_button.pack(padx=30, pady=20)
-        
+
     def save_new_character(self):
         informations = []
         for info in self.infos:
@@ -311,13 +311,13 @@ class Application(Tk):
         if len(informations[1]) < 1:
             showinfo("Champ incomplet", "Attention ! La race de votre personnage n'est pas remplie !")
         if len(informations[2]) < 1:
-            showinfo("Champ incomplet", "Attention ! La classe de votre personnage n'est pas remplie !") 
+            showinfo("Champ incomplet", "Attention ! La classe de votre personnage n'est pas remplie !")
         else:
           del self.infos
           new_personnage = Personnage(nom=informations[0], race=informations[1], classe=informations[2], niveau=informations[3], ca=informations[4], pv=informations[5], init=informations[6])
           showinfo("Réussite", "L'enregistrement de votre personnage a été effectué avec succès !")
-        
-        
+
+
     def load_campagne(self):
         campagne = self.liste_campagnes.curselection()
         if len(campagne) < 1:
